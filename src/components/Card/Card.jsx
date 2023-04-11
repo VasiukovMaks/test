@@ -7,3 +7,5 @@ const Card = (props) => {
         <button>Купить</button>
     </div>
 }
+
+export default Card;
