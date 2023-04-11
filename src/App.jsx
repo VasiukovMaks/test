@@ -1,7 +1,10 @@
+import testData from "./assents/data.json";
+import Card from "./components/Card/Card";
 
 const promoData = ["=)", "^_^", "O_o", "x_x", "=(", ";(", "0l0"];
 // .map() => преобразовывает один елемент массива в другой элемент (для всех без исключения)
 
+console.log(testData);
 
 const Promo = (props) => {
     // props - объект - используется для передачи разных значений внутрь компонента
@@ -22,6 +25,9 @@ const App = () => {
       <div>
         <h1>First Page</h1>
         <div className="container">
+            {testData.map(pro => (
+                <Card img={pro.pictures} name={pro.name} price={pro.price} />
+            ))}
             {/* <Promo text="First"/>
             <Promo text="Second"/>
             <Promo text={4 * 10}/>
