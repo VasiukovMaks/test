@@ -4,6 +4,7 @@ import Header from "./components/Header"; // Header/index.jsx
 import { Footer } from "./components/Header";
 
 const promoData = ["=)", "^_^", "O_o", "x_x", "=(", ";(", "0l0"];
+
 // .map() => преобразовывает один елемент массива в другой элемент (для всех без исключения)
 
 console.log(testData);
